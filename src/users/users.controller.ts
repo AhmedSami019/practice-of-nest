@@ -17,4 +17,9 @@ export class UsersController {
   addUsers() {
     return 'add new user';
   }
+
+  @Post(':id')
+  addSingle(@Param() id: object) {
+    return id;
+  }
 }
